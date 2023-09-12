@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+svg path{
+    fill: #79C2D0;
+    stroke: #eee;
+    stroke-width: .25;
+}
+
+svg path:hover{
+    fill:#C7BEA2;
+    transition:0.2s;
+    cursor: pointer;
+}

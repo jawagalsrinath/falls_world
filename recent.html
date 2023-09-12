@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#falls-world</title>
+    <link rel="stylesheet" href='stylemap.css'>
+    <script src="https://kit.fontawesome.com/0e0169f4b0.js" crossorigin="anonymous"></script>
+    <style>
+        svg path{
+            fill: #79C2D0;
+            stroke: #eee;
+            stroke-width: .25;
+        }
+
+        svg path:hover{
+            fill:#C7BEA2;
+            transition:0.2s;
+            cursor: pointer;
+        }
+
+        svg{
+            width: 60%;
+            height: 60%;
+            margin:0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logobgr.png" class="logo" alt="logo"  style="width: 85px;height: 65px;"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Top rated.html">Top rated</a></li>
+                <li><a href="about.html">About</a></li>
+                <li id="lg-bag"><a class="active" href="recent.html"><i class="fa-solid fa-paper-plane"></i></a></li>
+				<li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <a href="#" id="close"><b>X</b></a>                                        
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="recent.html"><i class="fa-solid fa-paper-plane"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>    
+    </section>
+    <section id="here">
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  const selectedSectionId = localStorage.getItem('product1');
+
+  if (selectedSectionId) {
+    const clonedSection = document.getElementById(selectedSectionId);
+    document.getElementById('here').appendChild(clonedSection);
+  }
+});
+     </script>
+</body>
+</html>
